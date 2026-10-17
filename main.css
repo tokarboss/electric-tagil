@@ -1,0 +1,21 @@
+/* Основные стили сетки, фона и анимаций */
+.hero-pattern {
+    background-image: radial-gradient(#f59e0b 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+/* Кастомный скроллбар */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-gold);
+}

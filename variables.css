@@ -1,0 +1,21 @@
+/* Глобальные CSS-переменные и токены темы */
+:root {
+    --bg-dark: #090d16;
+    --bg-section-alt: #0c101c;
+    --bg-card: #111827;
+    --bg-card-hover: #1f293d;
+    --border-color: #1f2937;
+    --accent-gold: #f59e0b;
+    --accent-gold-hover: #d97706;
+    --text-main: #f3f4f6;
+    --text-muted: #9ca3af;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
