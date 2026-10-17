@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профессиональный электромонтаж и сборка щитов в Нижнем Тагиле и области (80 км)</title>
+    <meta name="description" content="Качественный инженерный электромонтаж, сборка щитов любой сложности, слаботочные системы в Нижнем Тагиле, Верхней и Нижней Салде, Кушве, Невьянске и Красноуральске. Гарантия 5 лет.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#090d16',
+                        darkCard: '#111827',
+                        darkCardHover: '#1f293d',
+                        accentGold: '#f59e0b',
+                        accentGoldHover: '#d97706',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Alpine.js for interactivity -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-darkBg text-gray-100 font-sans antialiased selection:bg-accentGold selection:text-black">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-darkBg/90 backdrop-blur-md border-b border-gray-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center shadow-lg shadow-amber-500/20">
+                    <i class="fa-solid fa-bolt text-black text-2xl font-black"></i>
+                </div>
+                <div>
+                    <span class="text-xl font-black tracking-wider text-white">ЭЛЕКТРО<span class="text-amber-400">МАСТЕР</span></span>
+                    <p class="text-xs text-gray-400">Инженерный монтаж • Тагил и область</p>
+                </div>
+            </div>
+
+            <!-- City Selector dropdown / badge -->
+            <div class="hidden md:flex items-center space-x-2 bg-gray-900/80 border border-gray-800 px-4 py-2 rounded-xl">
+                <i class="fa-solid fa-location-dot text-amber-400"></i>
+                <span class="text-sm text-gray-300">Зона выезда:</span>
+                <select class="bg-transparent text-amber-400 font-semibold text-sm outline-none cursor-pointer">
+                    <option class="bg-gray-900" value="ntagil">Нижний Тагил</option>
+                    <option class="bg-gray-900" value="vsalda">Верхняя Салда</option>
+                    <option class="bg-gray-900" value="nsalda">Нижняя Салда</option>
+                    <option class="bg-gray-900" value="kushva">Кушва</option>
+                    <option class="bg-gray-900" value="nevjansk">Невьянск</option>
+                    <option class="bg-gray-900" value="krasnouralsk">Красноуральск</option>
+                </select>
+            </div>
+
+            <!-- Contacts & CTA -->
+            <div class="flex items-center space-x-4">
+                <div class="hidden lg:block text-right">
+                    <a href="tel:+79506595785" class="text-lg font-bold text-white hover:text-amber-400 transition">+7 (950) 659-57-85</a>
+                    <p class="text-xs text-emerald-400 flex items-center justify-end space-x-1">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        <span>Работаем сегодня</span>
+                    </p>
+                </div>
+                <a href="#calculator" class="bg-amber-500 hover:bg-amber-600 text-black font-bold px-6 py-3 rounded-xl shadow-lg shadow-amber-500/20 transition transform hover:-translate-y-0.5">
+                    Рассчитать смету
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-20 pb-32 overflow-hidden bg-gradient-to-b from-darkBg via-[#0d1322] to-darkBg">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#f59e0b_1px,transparent_1px)] [background-size:24px_24px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 px-4 py-1.5 rounded-full mb-6">
+                        <i class="fa-solid fa-shield-halved text-amber-400"></i>
+                        <span class="text-xs sm:text-sm font-medium text-amber-300">Профессиональная сборка щитов и электрика по ГОСТу</span>
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-black text-white tracking-tight leading-none mb-6">
+                        Безупречная электрика <br>в <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200">Нижнем Тагиле</span> и области
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                        Сборка сложных силовых щитов, скрытая проводка под ключ, реле защиты, стабилизаторы и слаботочные системы. Выезд инженера в радиусе 80 км: Салда, Кушва, Невьянск, Красноуральск.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#calculator" class="bg-amber-500 hover:bg-amber-600 text-black font-bold px-8 py-4 rounded-xl text-center shadow-xl shadow-amber-500/20 transition">
+                            Рассчитать стоимость онлайн
+                        </a>
+                        <a href="tel:+79506595785" class="border border-gray-700 hover:border-amber-400 text-white font-semibold px-8 py-4 rounded-xl text-center transition flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <span>Позвонить мастеру</span>
+                        </a>
+                    </div>
+
+                    <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-gray-800">
+                        <div>
+                            <p class="text-3xl font-black text-white">5 лет</p>
+                            <p class="text-xs text-gray-400 mt-1">Гарантия по договору</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-black text-white">300+</p>
+                            <p class="text-xs text-gray-400 mt-1">Собранных щитов</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-black text-white">80 км</p>
+                            <p class="text-xs text-gray-400 mt-1">Радиус выезда</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Visual / Card -->
+                <div class="relative">
+                    <div class="absolute -inset-1 rounded-3xl bg-gradient-to-r from-amber-500 to-amber-300 opacity-20 blur-xl"></div>
+                    <div class="relative bg-darkCard border border-gray-800 rounded-3xl p-8 shadow-2xl">
+                        <div class="flex items-center justify-between mb-6 pb-4 border-b border-gray-800">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                                <div class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                            </div>
+                            <span class="text-xs text-gray-400 font-mono">shield_config_v2.sys</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-4"><i class="fa-solid fa-microchip text-amber-400 mr-2"></i> Инженерные стандарты монтажа</h3>
+                        <ul class="space-y-4 text-gray-300 text-sm">
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Точная маркировка каждого проводника и автомата (по ГОСТ).</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Обязательная установка реле напряжения (защита от скачков 380В).</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Применение качественных комплектующих (ABB, Schneider Electric, IEK).</span>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <i class="fa-solid fa-check text-amber-400 mt-1"></i>
+                                <span>Фотоотчет на каждом этапе скрытых работ.</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8 bg-gray-900/80 p-4 rounded-xl border border-gray-800 flex items-center justify-between">
+                            <div>
+                                <p class="text-xs text-gray-400">Выезд на замер и смету:</p>
+                                <p class="text-sm font-bold text-white">Бесплатно по Тагилу</p>
+                            </div>
+                            <a href="#calculator" class="text-xs font-bold text-amber-400 hover:underline">Перейти к расчетам &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULATOR SECTION -->
+    <section id="calculator" class="py-20 bg-[#0c101c]" x-data="{ 
+        type: 'flat', 
+        area: 65, 
+        shield: true, 
+        smart: false,
+        get total() {
+            let base = this.area * (this.type === 'flat' ? 1400 : (this.type === 'house' ? 1800 : 2200));
+            if(this.shield) base += 18000;
+            if(this.smart) base += 25000;
+            return base.toLocaleString('ru-RU');
+        }
+    }">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Интерактивный расчет стоимости</h2>
+                <p class="text-gray-400">Укажите параметры вашего объекта, чтобы узнать предварительную смету работ.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- Controls -->
+                <div class="lg:col-span-2 bg-darkCard border border-gray-800 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-3">1. Тип объекта</label>
+                        <div class="grid grid-cols-3 gap-3">
+                            <button @click="type = 'flat'" :class="type === 'flat' ? 'bg-amber-500 text-black font-bold' : 'bg-gray-900 text-gray-300 border border-gray-800'" class="py-3 px-4 rounded-xl text-sm transition">Квартира</button>
+                            <button @click="type = 'house'" :class="type === 'house' ? 'bg-amber-500 text-black font-bold' : 'bg-gray-900 text-gray-300 border border-gray-800'" class="py-3 px-4 rounded-xl text-sm transition">Коттедж</button>
+                            <button @click="type = 'commercial'" :class="type === 'commercial' ? 'bg-amber-500 text-black font-bold' : 'bg-gray-900 text-gray-300 border border-gray-800'" class="py-3 px-4 rounded-xl text-sm transition">Коммерция</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <label class="text-sm font-semibold text-gray-300">2. Площадь объекта (м²)</label>
+                            <span class="text-amber-400 font-bold" x-text="area + ' м²'"></span>
+                        </div>
+                        <input type="range" min="20" max="300" x-model="area" class="w-full accent-amber-500 bg-gray-800 h-2 rounded-lg cursor-pointer">
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-300 mb-3">3. Дополнительные опции</label>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 bg-gray-900/60 p-4 rounded-xl border border-gray-800 cursor-pointer">
+                                <input type="checkbox" x-model="shield" class="w-5 h-5 accent-amber-500 rounded">
+                                <span class="text-sm text-gray-200">Профессиональная сборка силового щита с защитой от скачков напряжения</span>
+                            </label>
+                            <label class="flex items-center space-x-3 bg-gray-900/60 p-4 rounded-xl border border-gray-800 cursor-pointer">
+                                <input type="checkbox" x-model="smart" class="w-5 h-5 accent-amber-500 rounded">
+                                <span class="text-sm text-gray-200">Слаботочные системы и элементы автоматики (видеонаблюдение, интернет)</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Summary Receipt -->
+                <div class="bg-gradient-to-b from-gray-900 to-darkCard border border-gray-800 rounded-3xl p-8 shadow-2xl flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-xl font-bold text-white mb-6">Ваша смета</h3>
+                        <div class="space-y-4 text-sm text-gray-300 mb-8">
+                            <div class="flex justify-between pb-3 border-b border-gray-800">
+                                <span>Монтаж по площади:</span>
+                                <span class="text-white font-semibold" x-text="type === 'flat' ? 'Квартира' : (type === 'house' ? 'Коттедж' : 'Коммерция')"></span>
+                            </div>
+                            <div class="flex justify-between pb-3 border-b border-gray-800">
+                                <span>Площадь:</span>
+                                <span class="text-white font-semibold" x-text="area + ' кв.м'"></span>
+                            </div>
+                            <div class="flex justify-between pb-3 border-b border-gray-800">
+                                <span>Сборка щита:</span>
+                                <span class="text-amber-400 font-semibold" x-text="shield ? 'Включено' : 'Нет'"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="mb-6">
+                            <p class="text-xs text-gray-400">Примерная стоимость работ:</p>
+                            <p class="text-3xl sm:text-4xl font-black text-amber-400"><span x-text="total"></span> ₽</p>
+                            <p class="text-xs text-gray-500 mt-1">*Точная сметная стоимость определяется после замера</p>
+                        </div>
+
+                        <a href="tel:+79506595785" class="block w-full bg-amber-500 hover:bg-amber-600 text-black font-bold py-4 rounded-xl text-center shadow-lg shadow-amber-500/20 transition">
+                            Вызвать мастера на замер
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICES SECTION -->
+    <section id="prices" class="py-20 bg-darkBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black text-white mb-4">Прайс-лист на электромонтажные услуги</h2>
+                <p class="text-gray-400">Прозрачные расценки без скрытых доплат и навязанных услуг.</p>
+            </div>
+
+            <div class="bg-darkCard border border-gray-800 rounded-3xl overflow-hidden shadow-2xl">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-gray-900 border-b border-gray-800 text-gray-300 text-sm">
+                                <th class="p-6 font-bold">Наименование услуги</th>
+                                <th class="p-6 font-bold">Единица измерения</th>
+                                <th class="p-6 font-bold text-right">Стоимость (руб.)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-800/60 text-sm text-gray-300">
+                            <tr class="hover:bg-gray-900/40 transition">
+                                <td class="p-6 font-medium text-white">Штробление стен под проводку (бетон/кирпич)</td>
+                                <td class="p-6">п.м.</td>
+                                <td class="p-6 text-right font-bold text-amber-400">от 250 ₽</td>
+                            </tr>
+                            <tr class="hover:bg-gray-900/40 transition">
+                                <td class="p-6 font-medium text-white">Установка подрозетника с высверливанием</td>
+                                <td class="p-6">шт.</td>
+                                <td class="p-6 text-right font-bold text-amber-400">от 350 ₽</td>
+                            </tr>
+                            <tr class="hover:bg-gray-900/40 transition">
+                                <td class="p-6 font-medium text-white">Монтаж кабеля в гофре / открыто</td>
+                                <td class="p-6">п.м.</td>
+                                <td class="p-6 text-right font-bold text-amber-400">от 90 ₽</td>
+                            </tr>
+                            <tr class="hover:bg-gray-900/40 transition">
+                                <td class="p-6 font-medium text-white">Профессиональная сборка силового электрощита</td>
+                                <td class="p-6">модуль / щит</td>
+                                <td class="p-6 text-right font-bold text-amber-400">от 6 500 ₽</td>
+                            </tr>
+                            <tr class="hover:bg-gray-900/40 transition">
+                                <td class="p-6 font-medium text-white">Установка розеток и выключателей</td>
+                                <td class="p-6">шт.</td>
+                                <td class="p-6 text-right font-bold text-amber-400">от 250 ₽</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GEOGRAPHY SECTION -->
+    <section class="py-20 bg-[#0c101c] border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-black text-white mb-6">География работы: Нижний Тагил и область (80 км)</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-12">Выезжаем на объекты, замеры и монтаж в следующие населенные пункты:</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <span class="bg-gray-900 border border-gray-800 px-6 py-3 rounded-xl text-sm font-semibold text-white">Нижний Тагил</span>
+                <span class="bg-gray-900 border border-gray-800 px-6 py-3 rounded-xl text-sm font-semibold text-white">Верхняя Салда</span>
+                <span class="bg-gray-900 border border-gray-800 px-6 py-3 rounded-xl text-sm font-semibold text-white">Нижняя Салда</span>
+                <span class="bg-gray-900 border border-gray-800 px-6 py-3 rounded-xl text-sm font-semibold text-white">Кушва</span>
+                <span class="bg-gray-900 border border-gray-800 px-6 py-3 rounded-xl text-sm font-semibold text-white">Невьянск</span>
+                <span class="bg-gray-900 border border-gray-800 px-6 py-3 rounded-xl text-sm font-semibold text-white">Красноуральск</span>
+                <span class="bg-gray-900 border border-gray-800 px-6 py-3 rounded-xl text-sm font-semibold text-white">Кировград</span>
+                <span class="bg-gray-900 border border-gray-800 px-6 py-3 rounded-xl text-sm font-semibold text-white">Черноисточинск</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-darkBg border-t border-gray-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center space-x-3 mb-6 md:mb-0">
+                <div class="w-10 h-10 rounded-xl bg-amber-500 flex items-center justify-center font-black text-black text-xl">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div>
+                    <span class="text-lg font-black text-white">ЭЛЕКТРОМАСТЕР</span>
+                    <p class="text-xs text-gray-500">Инженерный электромонтаж © 2026</p>
+                </div>
+            </div>
+            <div class="text-center md:text-right">
+                <a href="tel:+79506595785" class="text-xl font-bold text-white hover:text-amber-400 transition">+7 (950) 659-57-85</a>
+                <p class="text-xs text-gray-400 mt-1">Звоните с 9:00 до 21:00 без выходных</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
